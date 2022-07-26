@@ -1,0 +1,140 @@
+.destinations {
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 80px;
+}
+
+.dest-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap; // justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  gap: 60px;
+  // flex-grow: 1;
+  transform: translateX(-520px);
+  margin-bottom: 24px;
+  // position: relative;
+  transition: 0.5s all ease-in-out;
+}
+
+.left {
+  order: 0;
+}
+
+.middle {
+  order: 1;
+}
+
+.right {
+  order: 2;
+}
+
+// #slider-2 {
+//   position: absolute;
+//   top: 0;
+//   // bottom: 0;
+//   left: 23%;
+//   // right: 0%;
+// }
+
+// #slider-3 {
+//   position: absolute;
+//   top: 0;
+//   right: -40%;
+// }
+
+.dest-card {
+  position: relative;
+}
+
+.current {
+  order: 2;
+}
+
+.dest-card img {
+  border-radius: 16px;
+}
+
+.dest-sign {
+  position: absolute;
+  bottom: 40px;
+  left: 15px;
+  @include ffr-500;
+  color: #fff;
+  font-size: 32px;
+}
+
+.dest-dots {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.dest-dot {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: rgba(242, 120, 92, 0.5);
+  &:hover {
+    background-color: var(--main);
+    transition: 0.3s all ease-in-out;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .dest-wrapper {
+    margin-left: 15px;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 15px;
+    flex-grow: 1;
+    transform: translateX(0);
+    margin-bottom: 24px;
+    position: relative;
+  }
+
+  .dest-card img {
+    width: 360px;
+    height: 210px;
+  }
+
+  .dest-sign {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    font-size: 20px;
+  }
+
+  .dest-dots {
+    position: absolute;
+    top: 0;
+  }
+
+  .dest-dot {
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+    &:hover {
+      background-color: var(--main);
+      transition: 0.3s all ease-in-out;
+    }
+  }
+
+  .dest-btn {
+    width: 95px;
+    height: 30px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .dest-btn img {
+    width: 10px;
+    height: 10px;
+  }
+}

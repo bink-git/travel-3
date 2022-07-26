@@ -1,0 +1,33 @@
+.btn {
+  border: none;
+  background-color: var(--second);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  cursor: pointer;
+  @include ffr-500;
+  & img {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  &:hover {
+    transition: 0.3s all ease-in-out;
+    background-color: #127f92;
+  }
+}
+
+.dest-btn {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  margin: auto;
+  padding: 15px 30px;
+}
+
+.story-btn {
+  margin-top: 36px;
+}
